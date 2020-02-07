@@ -50,7 +50,6 @@ h1, h2, h3, h4, p {
 }
 
 .precios {
-  width: 100vw;
   background-image: url("../img/bg-price.svg");
   background-repeat: no-repeat;
   background-position: top;
@@ -74,13 +73,13 @@ h1, h2, h3, h4, p {
 
 .precios_contenido_titulo {
   text-align: center;
-  display: inline-block;
+  flex-direction: column;
   margin: 20px;
 }
 
 .precios_contenido_card {
   background-color: #fff;
-  display: inline-block;
+  flex-direction: column;
   width: 270px;
   height: 400px;
   text-align: left;
@@ -545,16 +544,39 @@ footer {
   color: #fff;
   font-size: 1rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
 }
 footer .footer_links {
-  padding: 40px;
+  justify-content: start;
 }
 footer .footer_links a {
   padding: 0 20px;
 }
 footer .footer_legales {
-  padding: 40px;
+  justify-content: end;
+}
+
+@media (min-width: 768px) {
+  footer {
+    height: 100px;
+    background-color: #221d23;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  footer .footer_items {
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0px 15px;
+  }
+  footer .footer_items a {
+    padding: 0 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

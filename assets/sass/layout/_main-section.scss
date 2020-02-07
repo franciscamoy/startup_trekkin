@@ -40,7 +40,6 @@
 // SECTION PRECIOS IMAGEN //
 
 .precios {
-    width: 100vw;
     background-image: url('../img/bg-price.svg');
     background-repeat: no-repeat;
     background-position: top;
@@ -64,12 +63,12 @@
 }
 .precios_contenido_titulo {
     text-align: center;
-    display: inline-block;
+    flex-direction: column;
     margin: 20px;
 }
 .precios_contenido_card {
     background-color: $white;
-    display: inline-block;
+    flex-direction: column;
     width: 270px;
     height: 400px;
     text-align: left;
