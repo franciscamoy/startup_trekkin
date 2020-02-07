@@ -15,15 +15,7 @@
     }
 }
 
-.section_image {
-    width: 100%;
-    height: 1200px;
-    background-image: url('../img/bg-price.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
+// ANIMACION GRAFICO //
 
 .animation-element {
     opacity: 0;
@@ -37,26 +29,70 @@
     transform: translate3d(0px, 0px,0px);
 }
 
+// SECTION CARDS //
+
+.section_image {
+    width: 100%;
+    height: 1200px;
+    background-image: url('../img/bg-price.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .section_contenido {
+        padding: 100px;
+        text-align: center;
+    }
+
+    .titulo_card {
+        padding: 100px;
+        text-align: center;
+        color: $white;
+    }
+}
 
 .card {
-    width: 100%;
-    margin: auto;
-    text-align: center;
+    width: 50%;
+    padding: 20px;
+    text-align: left;
     background-color: $white;
+
+    li {
+        color: $raisingblack;
+        padding: 0 20px;
+        font-size: 0.5rem;
+    }
 }
   
 .price {
     color: $raisingblack;
-    font-size: 22px;
+    font-size: 2.5rem;
+}
+.linea_card {
+    border: solid 1px $spanishgray;
 }
   
 .card button {
-    border: none;
+    width: 80%;
     outline: 0;
-    padding: 12px;
+    padding: 10px;
     color: $white;
+    border: none;
     background-color: $ballblue;
     text-align: center;
+    font-size: 1.5px;
+}
+
+.section_image {
     width: 100%;
-    font-size: 18px;
+    height: 1200px;
+    background-image: url('../img/bg-price.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .section_contenido {
+        padding: 50px;
+        text-align: center;
+    }
 }

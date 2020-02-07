@@ -1,5 +1,10 @@
 
 .luxbar-navigation {
     padding: 0 30px;
-    align-content: center;
+    align-content: center; 
+
+    .li {
+        font-size: 1rem;
+        font-weight: 700;
+    }
 }
