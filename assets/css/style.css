@@ -15,23 +15,23 @@ h1, h2, h3, h4, p {
   margin: 0;
 }
 
-.main_texto {
+.main {
   justify-content: center;
   text-align: center;
 }
-.main_texto .main_texto1 {
+.main .main_contenido_texto1 {
   padding-top: 50px;
 }
-.main_texto .main_texto2 {
+.main .main_contenido_texto2 {
   padding: 50px;
   text-align: left;
 }
-.main_texto .animation-element {
+.main .animation-element {
   padding-top: 50px;
 }
 
 @media (min-width: 768px) {
-  .main_texto {
+  .main {
     align-items: center;
     width: 80vw;
   }
@@ -50,36 +50,41 @@ h1, h2, h3, h4, p {
 }
 
 .precios {
-  background-image: url("/assets/img/bg-price.svg");
+  width: 100vw;
+  background-image: url("../img/bg-price.svg");
   background-repeat: no-repeat;
+  background-position: top;
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   .precios {
-    width: 100vw;
-    height: 90%;
-    background-size: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
   }
 }
 .precios_contenido {
-  background-color: #fff;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 100px;
 }
-.precios_contenido li {
-  color: #221d23;
-  padding: 10px;
-  font-size: 0.7rem;
+
+.precios_contenido_titulo {
+  text-align: center;
+  display: inline-block;
+  margin: 20px;
 }
 
 .precios_contenido_card {
   background-color: #fff;
-  width: 280px;
-  height: 350px;
-  margin: auto;
+  display: inline-block;
+  width: 270px;
+  height: 400px;
   text-align: left;
   padding: 20px;
-  margin-bottom: 30px;
 }
 .precios_contenido_card .price {
   color: #221d23;
@@ -87,6 +92,11 @@ h1, h2, h3, h4, p {
 }
 .precios_contenido_card .linea_card {
   border: solid 1px #8f9199;
+}
+.precios_contenido_card li {
+  color: #221d23;
+  padding: 10px;
+  font-size: 0.7rem;
 }
 .precios_contenido_card button {
   width: 80%;

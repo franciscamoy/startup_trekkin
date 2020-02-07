@@ -1,12 +1,12 @@
 
-.main_texto {
+.main {
     justify-content: center;
     text-align: center;
     
-    .main_texto1 {
+    .main_contenido_texto1 {
         padding-top: 50px;
     }   
-    .main_texto2 {
+    .main_contenido_texto2 {
         padding: 50px;
         text-align: left;
     }
@@ -17,7 +17,7 @@
 
 
 @media (min-width: 768px) {
-    .main_texto {
+    .main {
         align-items: center;
         width: 80vw;
     }
@@ -40,40 +40,40 @@
 // SECTION PRECIOS IMAGEN //
 
 .precios {
-    background-image: url('/assets/img/bg-price.svg');
+    width: 100vw;
+    background-image: url('../img/bg-price.svg');
     background-repeat: no-repeat;
+    background-position: top;
     background-size: cover;
-  
 }
 
 @media (min-width: 768px) {
     .precios {
-        width: 100vw;
-        height: 90%;
-        background-size: 100%;
-         
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
     }
 }
 
 .precios_contenido {
-    background-color: $white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 100px;
+}
+.precios_contenido_titulo {
     text-align: center;
-
-    li {
-        color: $raisingblack;
-        padding: 10px;
-        font-size: 0.7rem;
-    }
-
+    display: inline-block;
+    margin: 20px;
 }
 .precios_contenido_card {
     background-color: $white;
-    width: 280px;
-    height: 350px;
-    margin: auto;
+    display: inline-block;
+    width: 270px;
+    height: 400px;
     text-align: left;
     padding: 20px;
-    margin-bottom: 30px;
 
     .price {
         color: $raisingblack;
@@ -82,7 +82,11 @@
     .linea_card {
         border: solid 1px $spanishgray;
     }
-
+    li {
+        color: $raisingblack;
+        padding: 10px;
+        font-size: 0.7rem;
+    }
     button {
         width: 80%;
         outline: 0;
