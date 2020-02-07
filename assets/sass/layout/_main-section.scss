@@ -24,3 +24,39 @@
     background-size: cover;
 
 }
+
+.animation-element {
+    opacity: 0;
+    transition: all 500ms linear;
+    transform: translate3d(0px, 20px,0px);
+    transition-delay: 0.5s;
+    position: relative;
+}
+.animation-element.in-view {
+    opacity: 1;
+    transform: translate3d(0px, 0px,0px);
+}
+
+
+.card {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: $white;
+}
+  
+.price {
+    color: $raisingblack;
+    font-size: 22px;
+}
+  
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: $white;
+    background-color: $ballblue;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+}
