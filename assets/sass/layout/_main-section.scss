@@ -1,6 +1,26 @@
 
 .main_texto {
-    padding: 10vw;
-    display: flex;
+    padding: 100px;
     justify-content: center;
+
+    .main_texto1 {
+        padding: 10px;
+        text-align: center;
+    }
+    .main_foto {
+        padding: 10px;
+    }
+    .main_texto2 {
+        padding: 10px;
+    }
+}
+
+.section_image {
+    width: 100%;
+    height: 1200px;
+    background-image: url('../../img/bg-price.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }

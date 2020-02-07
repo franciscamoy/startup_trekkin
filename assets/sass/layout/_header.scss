@@ -1,11 +1,18 @@
 
-
 .header_image {
-    width: 150%;
-    height: 600px;
+    width: 100%;
+    height: 1200px;
     background-image: url('../img/bg-hero.svg');
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #ffffff;
+
+    .row {
+        padding: 0 30px;;
+    }
+
+
+    .header_texto {
+        padding: 60px;
+    }
 }
