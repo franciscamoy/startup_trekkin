@@ -1,0 +1,21 @@
+
+footer {
+    height: 100px;
+    background-color: $raisingblack;
+    color: $white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    .footer_links {
+        padding: 40px;
+
+        a {
+            padding: 0 20px;
+        }
+    }
+
+    .footer_legales {
+        padding: 40px;
+    }
+}
