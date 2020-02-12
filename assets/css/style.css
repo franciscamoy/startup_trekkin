@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  align-content: center;
 }
 
 body {
@@ -15,8 +14,15 @@ h1, h2, h3, h4, p {
   margin: 0;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
 .main {
-  justify-content: center;
   text-align: center;
 }
 .main .main_contenido_texto1 {
@@ -50,24 +56,23 @@ h1, h2, h3, h4, p {
 }
 
 .precios {
-  height: 40vw;
+  height: 30vh;
   background-image: url("../img/bg-price.svg");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: cover;
+  background-size: 100%;
 }
 
 @media (min-width: 768px) {
   .precios {
     height: 50vh;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top;
     background-size: cover;
   }
 }
 .precios_contenido {
   background-color: #333745;
-  align-items: center;
 }
 
 .precios_contenido_titulo {
@@ -76,25 +81,23 @@ h1, h2, h3, h4, p {
   padding-bottom: 40px;
 }
 
-.precios_contenido_card {
+.precios_contenido_cards {
   background-color: #fff;
-  width: 270px;
+  width: 280px;
   height: 350px;
-  text-align: left;
   padding: 20px;
 }
-.precios_contenido_card .price {
+.precios_contenido_cards .price {
   color: #221d23;
   font-size: 2.5rem;
+  padding: 10px 0;
 }
-.precios_contenido_card .linea_card {
-  border: solid 1px #8f9199;
-}
-.precios_contenido_card li {
+.precios_contenido_cards li {
   color: #221d23;
   font-size: 0.7rem;
+  padding: 10px 0;
 }
-.precios_contenido_card button {
+.precios_contenido_cards button {
   width: 100%;
   outline: 0;
   padding: 10px;

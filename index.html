@@ -26,7 +26,7 @@
     </nav>
 
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="header_texto col-12 col-md-6">
                     <h1>Haz Trekkin Sin Parar</h1>
@@ -38,7 +38,7 @@
         <div class="header_image"></div>
     </header>
 
-    <main class="container main">
+    <main class="container-fluid main">
         <div class="row main_contenido">
             <div class="main_contenido_texto1 col-12">
                 <h2>Características</h2>
@@ -62,41 +62,44 @@
         </div>
     </main>
 
-    <section>
+    <section class="container-fluid">
         <div class="precios"></div>
-    
-        <div class="container">
-            <div class="row precios_contenido">
 
-                <div class="precios_contenido_titulo col-12">
-                    <h2>Precios</h2>
-                </div>
-    
-                <div class="precios_contenido_card col-12 col-md-6">
-                    <h3>Trekk-in Free</h3>
-                    <h2 class="price">$ 0 / mes</h2>
-                    <hr class="linea_card">
-                    <ul>
-                        <li>Ver mapas creados por usuarios</li>
-                        <li>Conectar con otros usuarios</li>
-                    </ul>
-                    <hr class="linea_card">
-                    <div><button>Obtén Free</button></div>
-                </div>
-    
-                <div class="precios_contenido_card col-12 col-md-6">
-                    <h3>Trekk-in Free</h3>
-                    <h2 class="price">$ 3500 / mes</h2>
-                    <hr class="linea_card">
-                    <ul>
-                        <li>Ver mapas creados por usuarios</li>
-                        <li>Conectar con otros usuarios</li>
-                        <li>Definir mejores rutas</li>
-                        <li>Mapas offline</li>
-                        <li>Integración con otras aplicaciones</li>
-                    </ul>
-                    <hr class="linea_card">
-                    <div><button>Obtén Premium</button></div>
+        <div class="row precios_contenido">
+
+            <div class="precios_contenido_titulo col-12">
+                <h2>Precios</h2>
+            </div>
+
+            <div class="precios_contenido_bg col-12">
+
+                <div class="container row">
+                    <div class="precios_contenido_cards col-12 col-md-6">
+                        <h3>Trekk-in Free</h3>
+                        <h2 class="price">$ 0 / mes</h2>
+                        <hr class="linea_card">
+                        <ul>
+                            <li>Ver mapas creados por usuarios</li>
+                            <li>Conectar con otros usuarios</li>
+                        </ul>
+                        <hr class="linea_card">
+                        <div><button>Obtén Free</button></div>
+                    </div>
+
+                    <div class="precios_contenido_cards col-12 col-md-6">
+                        <h3>Trekk-in Free</h3>
+                        <h2 class="price">$ 3500 / mes</h2>
+                        <hr class="linea_card">
+                        <ul>
+                            <li>Ver mapas creados por usuarios</li>
+                            <li>Conectar con otros usuarios</li>
+                            <li>Definir mejores rutas</li>
+                            <li>Mapas offline</li>
+                            <li>Integración con otras aplicaciones</li>
+                        </ul>
+                        <hr class="linea_card">
+                        <div><button>Obtén Premium</button></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -114,7 +117,8 @@
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/animate.js"></script>
 

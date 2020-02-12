@@ -1,6 +1,5 @@
 
 .main {
-    justify-content: center;
     text-align: center;
     
     .main_contenido_texto1 {
@@ -37,28 +36,27 @@
     transform: translate3d(0px, 0px,0px);
 }
 
-// SECTION PRECIOS IMAGEN //
+// SECTION PRECIOS //
 
 .precios {
-    height: 40vw;
+    height: 30vh;
     background-image: url('../img/bg-price.svg');
     background-repeat: no-repeat;
     background-position: top;
-    background-size: cover;
+    background-size: 100%;
 }
 
 @media (min-width: 768px) {
     .precios {
         height: 50vh;
         background-repeat: no-repeat;
-        background-position: top right;
+        background-position: top;
         background-size: cover;
     }
 }
 
 .precios_contenido {
     background-color: $onyx;
-    align-items: center;
   
 }
 .precios_contenido_titulo {
@@ -67,23 +65,23 @@
     padding-bottom: 40px;
   
 }
-.precios_contenido_card {
+.precios_contenido_cards {
     background-color: $white;
-    width: 270px;
+    width: 280px;
     height: 350px;
-    text-align: left;
     padding: 20px;
+
 
     .price {
         color: $raisingblack;
         font-size: 2.5rem;
+        padding: 10px 0;
     }
-    .linea_card {
-        border: solid 1px $spanishgray;
-    }
+    
     li {
         color: $raisingblack;
         font-size: 0.7rem;
+        padding: 10px 0;
     }
     button {
         width: 100%;
