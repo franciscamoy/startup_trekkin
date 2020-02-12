@@ -40,6 +40,7 @@
 // SECTION PRECIOS IMAGEN //
 
 .precios {
+    height: 40vw;
     background-image: url('../img/bg-price.svg');
     background-repeat: no-repeat;
     background-position: top;
@@ -48,29 +49,28 @@
 
 @media (min-width: 768px) {
     .precios {
-        height: 100vh;
+        height: 50vh;
         background-repeat: no-repeat;
-        background-position: top;
+        background-position: top right;
         background-size: cover;
     }
 }
 
 .precios_contenido {
-    justify-content: center;
+    background-color: $onyx;
     align-items: center;
-    display: flex;
-    padding: 100px;
+  
 }
 .precios_contenido_titulo {
+    color: $white;
     text-align: center;
-    flex-direction: column;
-    margin: 20px;
+    padding-bottom: 40px;
+  
 }
 .precios_contenido_card {
     background-color: $white;
-    flex-direction: column;
     width: 270px;
-    height: 400px;
+    height: 350px;
     text-align: left;
     padding: 20px;
 
@@ -83,11 +83,10 @@
     }
     li {
         color: $raisingblack;
-        padding: 10px;
         font-size: 0.7rem;
     }
     button {
-        width: 80%;
+        width: 100%;
         outline: 0;
         padding: 10px;
         color: $white;

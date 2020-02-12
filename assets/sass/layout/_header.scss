@@ -1,4 +1,8 @@
 
+.header_texto {
+    padding: 40px;
+}
+
 .header_image {
     width: 100vw;
     height: 300px;
@@ -7,14 +11,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     
-    .row {
-        width: 90%;
-       
-    }
-
-    .header_texto {
-        padding: 40px;
-    }
 }
 
 @media (min-width: 768px) {
@@ -25,14 +21,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-    
-        .row {
-            width: 80vw;
-            padding: 30px;
-        }
-        .header_texto {
-            padding: 60px;
-        }
     }
     
 }

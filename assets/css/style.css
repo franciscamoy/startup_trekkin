@@ -50,6 +50,7 @@ h1, h2, h3, h4, p {
 }
 
 .precios {
+  height: 40vw;
   background-image: url("../img/bg-price.svg");
   background-repeat: no-repeat;
   background-position: top;
@@ -58,30 +59,27 @@ h1, h2, h3, h4, p {
 
 @media (min-width: 768px) {
   .precios {
-    height: 100vh;
+    height: 50vh;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: top right;
     background-size: cover;
   }
 }
 .precios_contenido {
-  justify-content: center;
+  background-color: #333745;
   align-items: center;
-  display: flex;
-  padding: 100px;
 }
 
 .precios_contenido_titulo {
+  color: #fff;
   text-align: center;
-  flex-direction: column;
-  margin: 20px;
+  padding-bottom: 40px;
 }
 
 .precios_contenido_card {
   background-color: #fff;
-  flex-direction: column;
   width: 270px;
-  height: 400px;
+  height: 350px;
   text-align: left;
   padding: 20px;
 }
@@ -94,11 +92,10 @@ h1, h2, h3, h4, p {
 }
 .precios_contenido_card li {
   color: #221d23;
-  padding: 10px;
   font-size: 0.7rem;
 }
 .precios_contenido_card button {
-  width: 80%;
+  width: 100%;
   outline: 0;
   padding: 10px;
   color: #fff;
@@ -506,6 +503,10 @@ h1, h2, h3, h4, p {
     grid-column: span 1;
   }
 }
+.header_texto {
+  padding: 40px;
+}
+
 .header_image {
   width: 100vw;
   height: 300px;
@@ -513,12 +514,6 @@ h1, h2, h3, h4, p {
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.header_image .row {
-  width: 90%;
-}
-.header_image .header_texto {
-  padding: 40px;
 }
 
 @media (min-width: 768px) {
@@ -529,13 +524,6 @@ h1, h2, h3, h4, p {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  }
-  .header_image .row {
-    width: 80vw;
-    padding: 30px;
-  }
-  .header_image .header_texto {
-    padding: 60px;
   }
 }
 footer {
