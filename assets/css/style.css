@@ -24,9 +24,10 @@ h2 {
 
 .main {
   text-align: center;
+  margin: auto;
 }
 .main .main_contenido_texto1 {
-  padding-top: 50px;
+  padding-top: 10px;
 }
 .main .main_contenido_texto2 {
   padding: 50px;
@@ -60,7 +61,7 @@ h2 {
   background-image: url("../img/bg-price.svg");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100%;
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
@@ -71,33 +72,35 @@ h2 {
     background-size: cover;
   }
 }
-.precios_contenido {
+.section_precios .precios_contenido {
   background-color: #333745;
 }
-
-.precios_contenido_titulo {
+.section_precios .precios_contenido_titulo {
   color: #fff;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
-
-.precios_contenido_cards {
+.section_precios .precios_contenido_bg {
+  margin: auto;
+}
+.section_precios .precios_contenido_cards {
   background-color: #fff;
+  padding: 20px;
+  margin: 40px;
   width: 280px;
   height: 350px;
-  padding: 20px;
 }
-.precios_contenido_cards .price {
+.section_precios .precios_contenido_cards .price {
   color: #221d23;
   font-size: 2.5rem;
   padding: 10px 0;
 }
-.precios_contenido_cards li {
+.section_precios .precios_contenido_cards li {
   color: #221d23;
   font-size: 0.7rem;
   padding: 10px 0;
 }
-.precios_contenido_cards button {
+.section_precios .precios_contenido_cards button {
   width: 100%;
   outline: 0;
   padding: 10px;
@@ -508,6 +511,7 @@ h2 {
 }
 .header_texto {
   padding: 40px;
+  margin: auto;
 }
 
 .header_image {
@@ -534,17 +538,15 @@ footer {
   background-color: #221d23;
   color: #fff;
   font-size: 1rem;
-  display: flex;
-  flex-direction: row;
+  text-align: center;
 }
-footer .footer_links {
-  justify-content: start;
+footer .footer_items {
+  padding-top: 20px;
+  box-sizing: border-box;
+  text-align: center;
 }
-footer .footer_links a {
+footer .footer_items a {
   padding: 0 20px;
-}
-footer .footer_legales {
-  justify-content: end;
 }
 
 @media (min-width: 768px) {
@@ -555,9 +557,6 @@ footer .footer_legales {
     font-size: 1rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
   footer .footer_items {
     padding: 50px;

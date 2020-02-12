@@ -1,9 +1,10 @@
 
 .main {
     text-align: center;
+    margin: auto;
     
     .main_contenido_texto1 {
-        padding-top: 50px;
+        padding-top: 10px;
     }   
     .main_contenido_texto2 {
         padding: 50px;
@@ -43,7 +44,7 @@
     background-image: url('../img/bg-price.svg');
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100%;
+    background-size: cover;
 }
 
 @media (min-width: 768px) {
@@ -55,45 +56,53 @@
     }
 }
 
-.precios_contenido {
-    background-color: $onyx;
-  
-}
-.precios_contenido_titulo {
-    color: $white;
-    text-align: center;
-    padding-bottom: 40px;
-  
-}
-.precios_contenido_cards {
-    background-color: $white;
-    width: 280px;
-    height: 350px;
-    padding: 20px;
-
-
-    .price {
-        color: $raisingblack;
-        font-size: 2.5rem;
-        padding: 10px 0;
-    }
+.section_precios {
     
-    li {
-        color: $raisingblack;
-        font-size: 0.7rem;
-        padding: 10px 0;
+    .precios_contenido {
+        background-color: $onyx;
+  
     }
-    button {
-        width: 100%;
-        outline: 0;
-        padding: 10px;
+    .precios_contenido_titulo {
         color: $white;
-        border: none;
-        background-color: $ballblue;
         text-align: center;
-        font-size: 1rem;
+        padding-bottom: 20px;
     }
+    .precios_contenido_bg {
+        margin: auto;
+    }
+    .precios_contenido_cards {
+        background-color: $white;
+        padding: 20px;
+        margin: 40px;
+        width: 280px;
+        height: 350px;
+        
+        .price {
+            color: $raisingblack;
+            font-size: 2.5rem;
+            padding: 10px 0;
+        }
+        
+        li {
+            color: $raisingblack;
+            font-size: 0.7rem;
+            padding: 10px 0;
+        }
+        button {
+            width: 100%;
+            outline: 0;
+            padding: 10px;
+            color: $white;
+            border: none;
+            background-color: $ballblue;
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+ 
+    
 }
+
 
 
   

@@ -4,20 +4,17 @@ footer {
     background-color: $raisingblack;
     color: $white;
     font-size: 1rem;
-    display: flex;
-    flex-direction: row;
+    text-align: center;
 
-    .footer_links {
-        justify-content: start;
-
+    .footer_items {
+        padding-top: 20px;
+        box-sizing: border-box;
+        text-align: center;
         a {
             padding: 0 20px;
         }
     }
 
-    .footer_legales {
-        justify-content: end;
-    }
 }
 
 @media (min-width: 768px) {
@@ -28,9 +25,7 @@ footer {
         font-size: 1rem;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
+      
     
         .footer_items {
             padding: 50px;
